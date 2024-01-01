@@ -4,5 +4,5 @@ RUN apt-get update && \
 WORKDIR /var/www/html/	
 EXPOSE 80
 
-RUN cp -r ./2108_dashboard/* .
+COPY 2108_dashboard  .
 
