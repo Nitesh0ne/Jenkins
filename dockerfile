@@ -4,6 +4,5 @@ RUN apt-get update && \
 WORKDIR /var/www/html/	
 EXPOSE 80
 
-ADD https://www.tooplate.com/zip-templates/2108_dashboard.zip /tmp
-RUN cp -r /tmp/2108_dashboard/* .
+RUN cp -r ./2108_dashboard/* .
 
