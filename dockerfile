@@ -1,8 +1,9 @@
 FROM ubuntu 
 RUN apt-get update && \
-	apt-get install apache2 -y && \
-ENTRYPOINT ["/usr/sbin/apache2", "-k", "start"]
-EXPOSE 80 
+	apt-get install apache2 -y
+WORKDIR /var/www/html/	
+EXPOSE 80
 
-CMD apachectl -D FOREGROUND
+ADD https://www.tooplate.com/zip-templates/2108_dashboard.zip /tmp
+RUN cp /tmp/2108_dashboard/* .
 
