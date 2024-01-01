@@ -5,5 +5,5 @@ WORKDIR /var/www/html/
 EXPOSE 80
 
 ADD https://www.tooplate.com/zip-templates/2108_dashboard.zip /tmp
-RUN cp /tmp/2108_dashboard/* .
+RUN cp /tmp/21*/ .
 
