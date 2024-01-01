@@ -7,5 +7,5 @@ WORKDIR /var/www/html/
 EXPOSE 80
 
 COPY 2108_dashboard  .
-CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+CMD service apache2 start
 
